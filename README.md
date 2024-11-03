@@ -1,5 +1,5 @@
 # One eye stronghold finder
-A client-side fabric mod which allows you to find strongholds with only one Eye of Ender.
+A client-side fabric mod which allows you to find stronghold with only one Eye of Ender.
 
 ## Instructions
 Just throw Eye of Ender and mod will write the coordinates of nearest stronghold in the chat.
