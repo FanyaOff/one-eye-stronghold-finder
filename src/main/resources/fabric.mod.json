@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "one_eye_stronghold_finder",
+	"version": "${version}",
+	"name": "One eye stronghold finder",
+	"description": "Find stronghold with one eye of ender",
+	"authors": [
+		"Hopper4et"
+	],
+	"contact": {
+		"github": "https://github.com/Hopper4et"
+	},
+	"license": "MIT",
+	"icon": "assets/oneeyestrongholdfinder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.hopper4et.oneeyestrongholdfinder.OneEyeStrongholdFinderClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
