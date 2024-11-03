@@ -4,7 +4,7 @@ A client-side fabric mod which allows you to find strongholds with only one Eye 
 ## Instructions
 Just throw Eye of Ender and mod will write the coordinates of nearest stronghold in the chat.
 
-![](https://i.imgur.com/FuajZtp.gif)
+![demo](https://github.com/user-attachments/assets/1e0b2afb-9917-4131-83bc-c7aefae849a4)
 
 Green coordinates mean that the structure is most likely located here. The accuracy that the first coordinates will be a stronghold is 95%.
 
