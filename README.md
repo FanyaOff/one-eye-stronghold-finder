@@ -14,6 +14,9 @@ This tool leverages the behavior of the Eye of Ender in Minecraft Java Edition t
 
 ### Stronghold Generation Rings
 
+![image](https://github.com/user-attachments/assets/01dbf039-3e2d-4ddf-8d5c-4140c4823df8)
+
+
 There are 8 rings containing a total of 128 strongholds. Below is a breakdown of the stronghold distribution:
 
 | Ring | Number of Strongholds | Distance from Origin (blocks) |
