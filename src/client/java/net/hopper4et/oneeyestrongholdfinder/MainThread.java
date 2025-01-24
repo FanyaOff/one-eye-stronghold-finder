@@ -74,25 +74,28 @@ public class MainThread extends Thread {
         if (player == null) return;
         player.sendMessage(Text.literal("=== One Eye Stronghold Finder ===").setStyle(
                 Style.EMPTY.withColor(new Color(155, 251, 255).getRGB())
-        ));
+        ), false);
 
         for (int i = 0; i < Math.min(strongholds.size(), 5); i++) {
             int color = (strongholds.size() > 1) ? (int) ((strongholds.get(i).accuracy - minAccuracy) / colorRatio) : 510;
-            String clickText =
-                    ((isReverse ? strongholds.get(i).z : strongholds.get(i).x) + 3)
-                    + " ~ "
-                    + ((isReverse ? strongholds.get(i).x : strongholds.get(i).z) + 3);
+
+            int overworldX = (isReverse ? strongholds.get(i).z : strongholds.get(i).x) + 3;
+            int overworldZ = (isReverse ? strongholds.get(i).x : strongholds.get(i).z) + 3;
+            int netherX = overworldX / 8;
+            int netherZ = overworldZ / 8;
+
+            String clickText = overworldX + " ~ " + overworldZ;
 
             player.sendMessage(Text.literal(String.format(
-                    "X: %- 6d Z: %- 6d accuracy: %d",
-                    (isReverse ? strongholds.get(i).z : strongholds.get(i).x) + 3,
-                    (isReverse ? strongholds.get(i).x : strongholds.get(i).z) + 3,
+                    "X: %- 6d Z: %- 6d (Nether: X: %- 6d Z: %- 6d) accuracy: %d",
+                    overworldX, overworldZ,
+                    netherX, netherZ,
                     strongholds.get(i).accuracy
             )).setStyle(Style.EMPTY
-                    .withColor(new Color(Math.min(255, 510 - color),Math.min(255, color),2).getRGB())
+                    .withColor(new Color(Math.min(255, 510 - color), Math.min(255, color), 2).getRGB())
                     .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Text.literal("Copy to clipboard")))
                     .withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, clickText))
-            ));
+            ), false);
         }
     }
 
