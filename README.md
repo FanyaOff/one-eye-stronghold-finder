@@ -97,6 +97,6 @@ X: 1240   Z: 5680   (Nether: X: 155   Z: 710)   accuracy: 90
 1. Equip an Eye of Ender.
 2. Throw the Eye and wait for the results to appear in the chat.
 3. Travel to the provided coordinates to locate the stronghold.
-4. 
+   
 ![demo](https://github.com/user-attachments/assets/1e0b2afb-9917-4131-83bc-c7aefae849a4)
 
