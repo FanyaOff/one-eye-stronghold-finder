@@ -1,5 +1,10 @@
 # One eye stronghold finder
 A client-side fabric mod which allows you to find stronghold with only one Eye of Ender.
+Fork of [Hopper4et Mod](https://github.com/Hopper4et/one-eye-stronghold-finder)
+
+# Fixes
+- 1.21.x support
+- Displaying coordinats in the nether world
 
 ## Instructions
 Just throw Eye of Ender and mod will write the coordinates of nearest stronghold in the chat.
