@@ -5,10 +5,11 @@
 	"name": "One eye stronghold finder",
 	"description": "Find stronghold with one eye of ender",
 	"authors": [
-		"Hopper4et"
+		"Hopper4et",
+		"Fanya"
 	],
 	"contact": {
-		"github": "https://github.com/Hopper4et"
+		"github": "https://github.com/FanyaOff/one-eye-stronghold-finder"
 	},
 	"license": "MIT",
 	"icon": "assets/oneeyestrongholdfinder/icon.png",
