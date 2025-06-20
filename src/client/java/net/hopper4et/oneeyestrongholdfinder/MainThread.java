@@ -93,10 +93,11 @@ public class MainThread extends Thread {
                     strongholds.get(i).accuracy
             )).setStyle(Style.EMPTY
                     .withColor(new Color(Math.min(255, 510 - color), Math.min(255, color), 2).getRGB())
-                    .withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Text.literal("Copy to clipboard")))
-                    .withClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, clickText))
+                    .withHoverEvent(new HoverEvent.ShowText(Text.literal("Copy to clipboard")))
+                    .withClickEvent(new ClickEvent.CopyToClipboard(clickText))
             ), false);
         }
     }
+
 
 }
