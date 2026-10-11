@@ -3,6 +3,27 @@ A client-side fabric mod which allows you to find stronghold with only one Eye o
 
 Fork of [Hopper4et Mod](https://github.com/Hopper4et/one-eye-stronghold-finder)
 
+## Supported versions
+
+- Minecraft 1.21.8, 1.21.9, 1.21.10, and 1.21.11
+- Minecraft 26.1 (compatible with 26.1.1 and 26.1.2), 26.2, and 26.3
+
+The project uses Mojang mappings for 1.21.x and the game's unobfuscated Mojang names for 26.x.
+Stonecutter selects the matching Fabric Loom setup per Minecraft version. Java 21 is used for
+1.21.x; Java 25 is required for 26.x.
+
+Compile each supported version with:
+
+```shell
+./gradlew :1.21.8:compileClientJava
+./gradlew :1.21.9:compileClientJava
+./gradlew :1.21.10:compileClientJava
+./gradlew :1.21.11:compileClientJava
+./gradlew :26.1:compileClientJava
+./gradlew :26.2:compileClientJava
+./gradlew :26.3:compileClientJava
+```
+
 # Fixes
 - 1.21.x support
 - Displaying coordinats in the nether world

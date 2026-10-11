@@ -13,7 +13,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/oneeyestrongholdfinder/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"client": [
 			"net.hopper4et.oneeyestrongholdfinder.OneEyeStrongholdFinderClient"
@@ -21,8 +21,8 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.16.2",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
+		"minecraft": "${minecraft_version_range}",
+		"java": ">=${java_version}",
 		"fabric-api": "*"
 	}
 }
